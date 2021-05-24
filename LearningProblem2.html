@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            
+            body{
+                    padding: 2em;
+                }
+                .headerContainer{
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-content: center;
+                    background: tomato;
+                    font-weight: bold;
+                    padding: 50px;
+                }
+                .footerContainer{
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-content: center;
+                    background: lightgreen;
+                    font-weight: bold;
+                    padding: 10px;
+
+                }
+                .mainContainer{
+                    display: flex;
+                    flex-flow: row wrap;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .mainContentItem{
+                    text-align: left;
+                    background: deepskyblue;
+                }
+                article{
+                    padding: 10px;
+                    margin: 10px;
+                    background: aqua;
+                }
+                .sideBarLeftItem{background: gold;}
+                .sideBarRightItem{background: hotpink;}
+                .sideBarItem{flex: 1 0 0;border: 0px solid green;}
+                .mainContentItem{flex: 3 0px;}
+                .sideBarLeftItem{order: 1;}
+                .mainContentItem{order: 2;}
+                .sideBarRightItem{order: 3;}
+        
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER-Sample flex box example</h1></header>
+        
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First article</h2>
+                    <p>One controversy in the English Wikipedia concerns which national variety of the English language is to be preferred, 
+                        with the most commonly advocated candidates being American English and British English.[29] Perennial suggestions 
+                        range from standardizing upon a single form of English to forking the English Wikipedia project. A style guideline 
+                        </p>
+                </article>
+                <article>
+                    <h2>second article</h2>
+                    <p>Andrew Lih wrote that the English Wikipedia "didn't have the chance to go through a debate over whether there should be a 
+                        British English Wikipedia or an American English Wikipedia" because the English Wikipedia was the original edition.[31]
+                        [clarification needed] Editors agreed to use U.S. spellings for primarily American topics and British spellings for 
+                        </p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>Several incidents of threats of violence against high schools on Wikipedia have been reported in the mainstream press.
+                        [34][35][36] The Glen A. Wilson High School was the subject of such a threat in 2008,[34][35][36] and a 14-year-old was 
+                        arrested for making a threat against Niles West High School on Wikipedia in 2006.[37]
+                    </p>
+                    <p>Andrew Lih wrote that the English Wikipedia "didn't have the chance to go through a debate over whether there should be
+                         a British English Wikipedia or an American English Wikipedia" because the English Wikipedia was the original edition.
+                         [31][clarification needed] Editors agreed to use U.S. spellings for primarily American topics and British spellings for
+                          </p>
+                </article>
+            </section>
+            <sidebar class="sideBarItem sideBarLeftItem"><h2>Left side bar</h2></sidebar>
+            <sidebar class="sideBarItem sideBarRightItem"><h2>Right side bar</h2></sidebar>
+        </div>
+        <footer class="footerContainer"><h2>Footer</h2></footer>
+        <script type="text/javascript"></script>
+        
+    </body>
+</html>
